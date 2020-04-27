@@ -1,0 +1,29 @@
+@import "_mixins-sass/_vars.sass"
+@import "_mixins-sass/_screen-size.sass"
+@import '~open-color/open-color';
+
+.Work
+    padding-top: 8rem
+    padding-left: 2rem
+    max-width: 1200px
+    @include respond-to(sm)
+        padding-left: 0
+        padding-right: .5rem
+
+    &__tabContainer
+        .react-tabs__tab-list
+            border: 0
+        .react-tabs__tab
+            font-family: $second-font
+            font-weight: 500
+            font-size: 15px
+            border: 0
+            outline: none
+            &:focus
+                box-shadow: none
+                border-color: none
+                outline: none
+            &:hover
+                opacity: .8
+        .react-tabs__tab--selected
+            color: $oc-blue-5

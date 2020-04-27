@@ -1,0 +1,37 @@
+@import "_mixins-sass/_vars.sass"
+@import "_mixins-sass/_screen-size.sass"
+@import '~open-color/open-color';
+
+.Services
+    padding-top: 8rem
+    padding-left: 2rem
+    max-width: 1200px
+    @include respond-to(sm)
+        padding-left: 0
+    &__cardContainer
+        padding-top: 80px
+        position: relative
+        @include respond-to(sm)
+            padding-top: 0
+        &:before
+            content: ''
+            position: absolute
+            left: 0
+            top: 0
+            bottom: 0
+            right: 0
+            filter: blur(30px)
+            background-color: $oc-gray-2
+    &__countContainer
+        margin-top: 9em
+        background-image: url('../../images/counter.jpg')
+        background-repeat: no-repeat
+        background-size: cover
+        background-position: bottom left
+        color: $white
+        padding-top: 3em
+        padding-bottom: 3em
+        margin-left: -30px
+        margin-bottom: 3em
+        @include respond-to(sm)
+            margin-bottom: 0

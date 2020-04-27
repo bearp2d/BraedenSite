@@ -1,0 +1,111 @@
+@import "_mixins-sass/_vars.sass"
+@import "_mixins-sass/_screen-size.sass"
+@import '~open-color/open-color';
+.Home
+    width: 100%
+    height: 100%
+    overflow: hidden
+    // padding-left: 15px
+    .slick-dots
+        left: 25px
+        bottom: 25px
+        box-shadow: none
+        button
+            width: 10px
+            height: 10px
+            border-radius: 30px
+            background-color: $oc-gray-5
+        li.slick-active button
+            background-color: transparent
+            width: 6px
+            height: 6px
+            border: 2px solid $oc-green-6
+
+        button:before
+            content: ''
+            
+            
+            
+    &__activeDot
+        width: 10px
+        height: 10px
+        border-radius: 30px
+        background-color: $oc-yellow-9
+        border: 2px solid $oc-blue-9
+    &__Slide01
+        width: 90%
+        height: 100vh
+        background: url('../../images/desk1.jpeg')
+        background-size: cover
+        background-repeat: no-repeat
+        overflow: none
+        &__textBlock
+            h1
+                font-size: 75px
+                color: $oc-gray-9
+                padding-top: 20vh
+                padding-left: 5vw
+                @include respond-to(sm)
+                    font-size: 60px
+                    padding-left: 12vw
+            a
+                margin-top: 1rem
+                margin-left: 5vw
+                padding: 1rem 1.8rem
+                border-radius: 4px
+                background-color: transparent
+                border: 1px solid $oc-gray-9
+                color: $oc-gray-9
+                outline: none
+                letter-spacing: 1px
+                text-transform: uppercase
+                font-weight: 500
+                @include respond-to(sm)
+                    margin-left: 12vw
+                    background-color: $oc-gray-9
+                    color: $oc-gray-0
+                    transition: 0.5s
+                &:hover
+                    background-color: $oc-gray-9
+                    color: $oc-gray-0
+                    transition: 0.5s
+            
+    &__Slide02
+        width: 90%
+        height: 100vh
+        background: url('../../images/desk.jpg')
+        background-size: cover
+        background-repeat: no-repeat
+        overflow: none
+        &__textBlock
+            h1
+                font-size: 65px
+                color: $oc-blue-1
+                padding-top: 20vh
+                padding-left: 5vw
+                @include respond-to(sm)
+                    font-size: 50px
+            a
+                margin-top: 1rem
+                margin-left: 5vw
+                padding: 1rem 1.8rem
+                border-radius: 4px
+                background-color: transparent
+                border: 1px solid $oc-blue-1
+                color: $oc-blue-1
+                outline: none
+                letter-spacing: 1px
+                text-transform: uppercase
+                display: inline-block
+                cursor: hand
+                font-weight: 500
+                @include respond-to(sm)
+                    background-color: $oc-blue-1
+                    color: $oc-gray-9
+                    transition: 0.5s
+                &:hover
+                    background-color: $oc-blue-1
+                    color: $oc-gray-9
+                    transition: 0.5s
+
+        

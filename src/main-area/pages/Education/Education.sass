@@ -1,0 +1,50 @@
+@import "_mixins-sass/_vars.sass"
+@import "_mixins-sass/_screen-size.sass"
+@import '~open-color/open-color';
+
+.Education
+    padding-top: 8rem
+    padding-left: 2rem
+    max-width: 1200px
+    @include respond-to(sm)
+        padding-right: 1rem
+        padding-left: 1rem
+    .ui.accordion
+        width: 80%
+        border-radius: 0px
+        border: 0
+        @include respond-to(sm)
+            width: 100%
+        .active.title
+            background-color: $oc-blue-5
+            color: $oc-gray-0
+            text-transform: uppercase
+            font-size: 14px
+            padding: 1em 1em
+            font-weight: bold
+            transition: 0.5s
+            p 
+                font-family: $second-font
+                
+            i
+                display: none
+        .active.content
+            padding: 1em !important
+            border: 1px solid $oc-gray-4
+            margin-top: 0.5rem
+            margin-bottom: 0.5rem
+            p
+                font-family: $second-font
+                font-weight: 500
+                font-size: 14px
+        .title
+            background-color: $oc-gray-3
+            color: $oc-gray-8
+            text-transform: uppercase
+            font-size: 14px
+            padding: 1em 1em
+            font-weight: bold
+            margin-top: .5rem
+            
+            .dropdown.icon
+                display: none

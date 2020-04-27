@@ -1,0 +1,54 @@
+@import "_mixins-sass/_vars.sass"
+@import '~open-color/open-color';
+.Sidebar
+    min-width: 300px
+    min-height: 100%
+    text-align: center
+    padding-top: 3em
+    background-color: $oc-gray-2
+    overflow: hidden
+    img
+        width: 150px
+        border-radius: 100px
+        margin-bottom: 30px
+    h1
+        font-size: 20px
+        color: $oc-gray-9
+        font-weight: bold
+        margin-bottom: .5em
+    h5
+        margin: 0em
+    &__navbar
+        margin-top: 2rem
+        &--active
+            color: $light-blue !important
+            text-decoration: underline
+        li
+            margin-top: 0.8rem
+            margin-bottom: 0.8rem
+            text-transform: uppercase
+            letter-spacing: 1px
+            font-size: 14px
+            font-weight: 500
+            a
+                font-family: $second-font
+                color: $oc-gray-9
+                transition: 0.3s
+                position: relative
+                display: inline-block
+                &:hover
+                    color: $light-blue
+                    text-decoration: underline
+    &__socialLinks
+        margin-top: 2rem
+        a
+            padding: 0
+            margin: 0
+            svg
+                padding: .1rem
+                margin: .2rem
+                cursor: pointer
+                &:hover
+                    opacity: 0.8
+                
+            

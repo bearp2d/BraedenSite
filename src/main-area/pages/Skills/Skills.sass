@@ -1,0 +1,21 @@
+@import "_mixins-sass/_vars.sass"
+@import "_mixins-sass/_screen-size.sass"
+@import '~open-color/open-color';
+
+.Skills
+    padding-top: 8rem
+    padding-left: 2rem
+    max-width: 1200px
+    padding-bottom: 5rem
+    @include respond-to(sm)
+        padding-left: 0
+    h4
+        font-size: 16px
+        font-family: $second-font
+        font-weight: 400
+        line-height: 2rem
+        @include respond-to(sm)
+            padding-left: 1rem
+            padding-right: 1rem
+    &__progressContainer
+        

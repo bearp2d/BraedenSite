@@ -1,0 +1,32 @@
+@import "_mixins-sass/_vars.sass"
+@import "_mixins-sass/_screen-size.sass"
+@import '~open-color/open-color'
+
+.MainArea
+    &__mobileMenu
+        overflow: hidden
+        background-color: $oc-gray-2
+        height: 3rem
+        box-shadow: 0px 0px 6px $oc-gray-6
+        position: fixed
+        top: 0px
+        width: 100%
+        z-index: 1
+        svg
+            margin-top: 7px
+            margin-left: 10px
+            width: 50px
+            color: $oc-gray-7
+            padding-top: 3px
+            padding-left: 3px
+        p
+            text-align: center
+            margin: 0
+            text-transform: uppercase
+            margin-top: -1.7rem
+            font-family: $second-font
+            font-weight: bold
+            letter-spacing: .2rem
+
+
+    

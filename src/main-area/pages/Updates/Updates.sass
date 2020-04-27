@@ -1,0 +1,31 @@
+@import "_mixins-sass/_vars.sass"
+@import "_mixins-sass/_screen-size.sass"
+@import '~open-color/open-color';
+
+.Updates
+    padding-top: 8rem
+    padding-left: 2rem
+    max-width: 1200px
+    @include respond-to(sm)
+        padding-left: 0
+    &__listContainer
+        &__item
+            margin-top: 1rem
+            @include respond-to(sm)
+                padding-left: 1rem
+            p
+                font-family: $default-font
+                font-weight: bold
+                color: $oc-gray-9
+                font-size: 20px
+                margin-bottom: .5rem
+                svg
+                    margin-right: .2rem
+                    padding-top: .3rem
+            li
+                font-family: $second-font
+                padding: .2rem
+                padding-top: 0
+                font-weight: 500
+                margin-left: 1rem
+                color: $oc-gray-6

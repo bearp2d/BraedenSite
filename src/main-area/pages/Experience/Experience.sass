@@ -1,0 +1,25 @@
+@import "_mixins-sass/_vars.sass"
+@import "_mixins-sass/_screen-size.sass"
+@import '~open-color/open-color';
+
+.Experience
+    padding-top: 8rem
+    padding-left: 2rem
+    max-width: 1200px
+    @include respond-to(sm)
+        padding-left: .5rem
+        padding-right: .5rem
+    &__cardContainer    
+        margin-left: 2rem
+        border-left: 4px solid $oc-gray-3
+        &__bottom
+            width: 30px
+            height: 30px
+            background-color: $white
+            border: 3px solid $oc-gray-3
+            border-radius: 50%
+            margin-left: -17px
+            margin-top: 20px
+            margin-bottom: 9rem
+
+        

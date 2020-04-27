@@ -1,0 +1,29 @@
+@import "_mixins-sass/_vars.sass"
+@import "_mixins-sass/_screen-size.sass"
+@import '~open-color/open-color'
+
+.Contact
+    padding-top: 8rem
+    padding-left: 2rem
+    max-width: 1200px
+    @include respond-to(sm)
+        padding-left: 0
+    &__content
+        &__item
+            display: flex
+            justify-content: flex-start
+            align-items: center
+            margin-top: 1rem
+            &__icon
+                display: flex
+                justify-content: center
+                align-items: center
+                width: 100px
+                height: 100px
+                background-color: $oc-gray-2
+            &__text
+                margin-left: 1rem
+                font-family: $second-font
+                font-weight: bold
+                color: #2c98f0
+

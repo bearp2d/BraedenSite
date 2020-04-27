@@ -1,0 +1,96 @@
+@import "_mixins-sass/_vars.sass"
+@import '~open-color/open-color';
+@import "_mixins-sass/_screen-size.sass"
+.WorkCard
+    border: 1px solid $oc-gray-5
+    padding: 2rem 3rem 
+    text-align: center
+    position: relative
+    overflow: hidden
+    min-height: 420px
+    @include respond-to(sm)
+        padding: 4rem 1rem
+    &:hover
+        background-color: $oc-gray-3
+    img
+        width: 160px
+    &__mobile
+        position: absolute
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+    &__companyName
+        text-align: left
+        font-family: $second-font
+        font-size: 16px
+        font-weight: bold
+        color: $oc-gray-6
+        margin-top: 1rem
+    &__projectTitle
+        text-align: left
+        font-family: $second-font
+        font-size: 22px
+        font-weight: 800
+        color: $oc-gray-7
+        margin-top: 1rem
+    &__techStack
+        text-align: left
+        margin-top: 2rem
+        font-family: $second-font
+        font-weight: bold
+        color: $oc-gray-8
+        h5
+            float: left
+            margin: 0
+            font-size: 14px
+            font-weight: bold
+            color: $oc-gray-6
+            margin-right: .5rem
+    &__desc
+        div
+            max-height: 5rem
+            min-height: 5rem
+            margin-top: 1.5rem
+            text-align: justify
+            font-family: $second-font
+            font-weight: bold
+            color: $oc-gray-8
+            line-height: 1.5em
+    &__link
+        position: absolute
+        width: 75px
+        height: 75px
+        border-radius: 50%
+        background-color: $oc-blue-8
+        left: 0
+        right: 0
+        top: 0
+        bottom: 0
+        margin: auto
+        opacity: 0
+        transform: rotate(0) scale(2)
+        transition: all .2s linear
+        &:before
+            width: 25px
+            height: 3px
+            margin-top: -1px
+            margin-left: -12px
+        &:after
+            width: 3px
+            height: 25px
+            margin-top: -12px
+            margin-left: -1px
+        &:before, &:after
+            content: ""
+            position: absolute
+            top: 50%
+            left: 50%
+            display: block
+            background-color: #fff
+        &--hover
+            opacity: 1
+            transform: rotate(-90deg) scale(1)
+            transition: all .2s linear
+            
+        

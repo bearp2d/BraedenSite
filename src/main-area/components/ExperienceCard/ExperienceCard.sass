@@ -1,0 +1,67 @@
+@import "_mixins-sass/_vars.sass"
+@import '~open-color/open-color';
+
+.ExperienceCard
+    margin-left: -22px
+    margin-top: 40px
+    &__icon
+        width: 40px
+        height: 40px
+        border-radius: 50px
+        background-color: $oc-blue-4
+        display: flex
+        justify-content: center
+        align-items: center
+        box-shadow: 0 0 0 5px $oc-gray-1
+        line-height: 40px
+        float: left;
+        svg
+            color: $white
+    &__content
+        position: relative
+        background: #f2f3f7
+        padding: 1.5em
+        margin-left: 60px
+        -webkit-background-clip: padding-box
+        -moz-background-clip: padding
+        background-clip: padding-box
+        h4
+            font-family: $second-font
+            color: $oc-gray-6
+            font-size: 18px
+            margin-bottom: .3rem
+        h2
+            font-family: $second-font
+            float: left
+            margin: 0
+        h3
+            margin: 0
+            padding-left: .5rem
+            display: inline-block
+            font-family: $second-font
+            font-size: 16px
+            padding-top: 5px
+            font-weight: bold
+            color: $oc-gray-6
+        p
+            display: inline-block
+            margin-top: 2rem
+            margin-bottom: 1.5rem
+            line-height: 2
+            font-family: $second-font
+            color: $oc-gray-7
+            
+        &:after
+            content: ''
+            display: block
+            position: absolute
+            width: 0
+            height: 0
+            border-style: solid
+            border-width: 9px 9px 9px 0
+            border-color: transparent #f2f3f7 transparent transparent
+            left: 0
+            top: 10px
+            margin-left: -9px
+    
+    

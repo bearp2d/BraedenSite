@@ -1,0 +1,22 @@
+@import "_mixins-sass/_vars.sass"
+@import '~open-color/open-color'
+@import "_mixins-sass/_screen-size.sass"
+
+.MainTitle
+
+    &__title
+        font-size: 12px
+        text-transform: uppercase
+        font-family: $second-font
+        font-weight: 500
+        color: $oc-gray-6
+        @include respond-to(sm)
+            padding-left: 1rem
+    > h1
+        padding-top: 16px
+        font-size: 22px
+        text-transform: uppercase
+        letter-spacing: 5px
+        padding-bottom: 3rem
+        @include respond-to(sm)
+            padding-left: 1rem

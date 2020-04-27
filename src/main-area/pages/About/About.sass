@@ -1,0 +1,61 @@
+@import "_mixins-sass/_vars.sass"
+@import "_mixins-sass/_screen-size.sass"
+@import '~open-color/open-color';
+
+.About
+    padding-top: 8rem
+    padding-left: 2rem
+    max-width: 1200px
+    @include respond-to(sm)
+        padding-left: 0
+    h4, a
+        font-size: 16px
+        font-family: $second-font
+        font-weight: 400
+        line-height: 2rem
+        @include respond-to(sm)
+            padding: 1rem
+        strong
+            font-family: $second-font
+    a
+        &:hover
+            text-decoration: underline
+
+    &__cardContainer
+        margin-top: 2rem
+        position: relative
+        &:before
+            content: ''
+            position: absolute
+            left: 0
+            top: 0
+            bottom: 0
+            right: 0
+            filter: blur(20px)
+            background-color: $oc-gray-1
+    &__hireme
+        margin-top: 7rem
+        padding: 2rem
+        background-color: $oc-yellow-6
+        h1
+            letter-spacing: 0px
+            text-transform: none
+            font-weight: 500
+            font-size: 30px
+            line-height: 1.5
+        a
+            margin-top: 2rem
+            border-radius: 0px
+            background-color: transparent
+            border: 1px solid $oc-gray-9
+            padding: 0.5rem 0.8rem
+            min-width: auto
+            min-height: auto
+            text-transform: uppercase
+            letter-spacing: 2px
+            color: $oc-gray-9
+            font-size: 16px
+            &:hover
+                background-color: $oc-gray-9
+                color: $oc-gray-0
+                text-decoration: none

@@ -1,0 +1,122 @@
+@import "_mixins-sass/_vars.sass"
+@import "_mixins-sass/_screen-size.sass"
+@import '~open-color/open-color'
+
+.WorkDetail
+    padding-top: 1rem
+    padding-left: 2rem
+    max-width: 900px
+    display: flex
+    flex-direction: row
+    flex-wrap: nowrap
+    justify-content: center
+    align-items: stretch
+    height: 100%
+    position: relative
+    @include respond-to(sm)
+        display: block
+        padding-left: 0
+        margin-top: 80px
+        z-index: 0
+    &__image
+        width: 50%
+        display: flex
+        justify-content: center
+        align-items: center
+        @include respond-to(sm)
+            width: 100%
+        img
+            max-width: 75%
+            max-height: 600px
+            @include respond-to(sm)
+            max-width: 50%
+    &__content
+        width: 45%
+        background-color: $oc-gray-4
+        padding: 2.5rem 2rem
+        @include respond-to(sm)
+            width: 100%
+            margin-top: 40px
+        h3
+            font-family: $second-font
+            font-weight: bold
+            color: $oc-gray-6
+        h1
+            font-family: $second-font
+            color: $oc-gray-8
+            margin-bottom: 2rem
+        &__info
+            display: flex
+            margin-top: .5rem
+            @include respond-to(sm)
+                display: block
+            h4:first-child
+                margin-right: .5rem
+                white-space: nowrap
+                color: $oc-gray-7
+
+            h4
+                margin: 0
+                font-size: 16px
+                color: $oc-gray-9
+                @include respond-to(sm)
+                    font-size: 14px
+            a
+                color: $oc-orange-8
+                font-family: $second-font
+                font-size: 14px
+                margin: 0
+                font-weight: bold
+                cursor: pointer
+                @include respond-to(sm)
+                    font-size: 14px
+                &:hover
+                    color: $oc-orange-6
+                
+        &__desc
+            font-family: $second-font
+            font-size: 16px
+            margin-top: 4rem
+            font-weight: bold
+            color: $oc-gray-8
+            line-height: 1.6
+    &__move
+        @include respond-to(sm)
+        margin-top: .5rem
+        margin-bottom: .5rem
+        a
+            position: absolute
+            top: 50%
+            margin-top: -26px
+            display: block
+            width: 53px
+            height: 53px
+            border: 1px orange dashed
+            display: flex
+            justify-content: center
+            align-items: center
+            @include respond-to(sm)
+                position: unset
+                margin-top: 0
+            &:hover
+                opacity: 0.6
+            &:before
+                font-size: 38px
+                left: 50%
+                top: 50%
+                position: absolute
+                font-weight: 700
+                transform: translate(-50%,-50%)
+        &--back
+            @include respond-to(sm)
+                float: left
+            a
+                left: 60px
+                
+
+        &--forw
+            @include respond-to(sm)
+                float: right
+                a
+                right: -40px
+                

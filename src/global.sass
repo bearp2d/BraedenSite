@@ -1,0 +1,75 @@
+
+@import "_mixins-sass/_vars.sass"
+@import '~open-color/open-color';
+*
+  padding: 0
+  margin: 0
+  box-sizing: border-box
+  font-family: $default-font
+  &:after, &:before
+    box-sizing: border-box
+a
+  transition: 0.5s
+  outline: none
+  text-decoration: none
+  display: inline-block
+  font-size: 12px
+  color: $light-blue
+  font-family: $second-font
+  &:hover, &:focus, &:active
+    // text-decoration: underline
+    color: $light-blue
+    outline: none
+
+ul
+  list-style-type: none
+
+button
+  border: none
+  padding: 0
+  cursor: pointer
+  outline: inherit
+  background-color: $white
+  // box-shadow: 0 3px 6px rgba(#000, .16)
+input
+    display: block
+    width: 100%
+    margin-bottom: 1rem
+    font-size: 16px
+    padding: 10px
+    outline: 0
+    border: 1px solid #e6ecf0
+    border-radius: 3px
+
+    &:focus 
+        box-shadow: 0 0 5px 0 $oc-gray-2
+    
+
+h1,h2, h3, 
+  font-family: $default-font
+  &:first-letter
+    text-transform: capitalize
+h1
+  font-size: 24px
+  margin: 0px
+h2
+  font-size: 22px
+h3
+  font-weight: normal
+  font-size: 20px
+h5
+  font-family: $second-font
+  font-weight: 400
+  font-size: 12px
+
+p
+  font-size: 16px
+  color: $black
+  &:first-letter
+    text-transform: capitalize
+.flexItem
+  order: 0
+  flex: 0 1 auto
+
+.ui.grid
+  margin: 0
