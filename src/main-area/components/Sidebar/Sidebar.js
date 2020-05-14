@@ -12,7 +12,7 @@ const Sidebar = ({ active, changeNav}) => {
   return (
     <div className="Sidebar">
       <img src={profile} alt="profile" />
-      <h1>Braden Earp</h1>
+      <h1>Braeden Earp</h1>
       <h5>
         <a href="#">FULL STACK DEVELOPER</a> IN United States
       </h5>
@@ -103,18 +103,6 @@ const Sidebar = ({ active, changeNav}) => {
           </li>
           <li>
             <NavLink
-              to="/contact"
-              className={classNames(
-                active === "contact" ? "Sidebar__navbar--active" : ""
-              )}
-              onClick={() => changeNav("contact")}
-            >
-              {" "}
-              Contact
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
               to="/updates"
               className={classNames(
                 active === "updates" ? "Sidebar__navbar--active" : ""
@@ -137,7 +125,7 @@ const Sidebar = ({ active, changeNav}) => {
               color="#0077b5"
             />
           </a>
-          <a href="https://github.com/ExpDevStar" target="_blank">
+          <a href="https://github.com/bearp2d" target="_blank">
             <FontAwesomeIcon
               icon={["fab", "github"]}
               size="2x"

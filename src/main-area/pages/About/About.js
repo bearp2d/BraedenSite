@@ -39,7 +39,7 @@ const About = props => {
       <ScrollTop />
       <MainTitle title="Who am I?" subTitle="About me" />
       <h4>
-        <strong>Hi, I'm Braden Earp</strong> from United States. I am an experienced
+        <strong>Hi, I'm Braeden Earp</strong> from United States. I am an experienced
         Full Stack developer interested in building usable, useful,
         well-constructed Web & Mobile Application. Interested in continuation
         of learning and cooperation with excellent people.
@@ -53,7 +53,7 @@ const About = props => {
       <h4>
         You can check this code in{" "}
         <a
-          href="https://github.com/ExpDevStar/ExpDevStarSite.git"
+          href="https://github.com/bearp2d/BraedenSite.git"
           target="_blank"
         >
           here

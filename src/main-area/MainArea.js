@@ -12,7 +12,6 @@ import Education from './pages/Education'
 import Experience from './pages/Experience'
 import Work from './pages/Work'
 import WorkDetail from './pages/WorkDetail'
-import Contact from './pages/Contact'
 import Updates from './pages/Updates'
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -99,7 +98,6 @@ class MainArea extends React.Component {
               <Route path="/experience" exact component={Experience} />
               <Route path="/work" exact component={Work} />
               <Route path="/work/:type/:id" exact component={WorkDetail} />
-              <Route path="/contact" exact component={Contact} />
               <Route path="/updates" exact component={Updates} />
               <Redirect to="/home" />
             </Switch>

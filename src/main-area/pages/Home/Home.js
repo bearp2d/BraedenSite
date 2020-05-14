@@ -25,7 +25,7 @@ const Home = props => {
                 <div className="Home__Slide01__textBlock">
                     <h1>
                     Hi! <br />
-                    I'm Braden
+                    I'm Braeden
                     </h1>
                           <a href="#" download>DownLoad CV</a>
                 </div>
